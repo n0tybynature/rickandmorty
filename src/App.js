@@ -30,7 +30,7 @@ const search = ( event ) => {
 
   return (
     <Container>
-     <Header></Header><Mouth></Mouth>
+     <Mouth><Header></Header></Mouth>
       <Bar><SearchBar onSubmit={search}/></Bar>
       <Midcontainer>
         <CharacterList link={url}/>
@@ -45,7 +45,7 @@ const Container = styled.div `
   );
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  height:100vh;
+  height:140vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -64,14 +64,13 @@ const Mouth = styled.div`
   
 `
 const Header = styled.div`
-  margin:25px;
   background-image:url(${img});
   background-size: 60%;
   background-repeat: no-repeat;
   background-position: top;
   height: 500px;
   width:100%;
-  position:fixed;
+  position:relative;
 
 `
 const Bar = styled.div`
@@ -80,6 +79,7 @@ const Bar = styled.div`
 const Midcontainer = styled.div `
   width: 90vw;
   height:70vh;
+  margin-left:50px;
   overflow:scroll;
   overflow-x: hidden;
   ::-webkit-scrollbar {width:3px;height:3px;};
