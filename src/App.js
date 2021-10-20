@@ -62,6 +62,12 @@ const Midcontainer = styled.div `
   height:539px;
   overflow:scroll;
   overflow-x: hidden;
+  ::-webkit-scrollbar {width:3px;height:3px;};
+  ::-webkit-scrollbar-button {background-color:rgba(255,255,255,0);};
+  ::-webkit-scrollbar-track {background-color:rgba(255,255,255,0);};
+  ::-webkit-scrollbar-track-piece {background-color:rgba(60,40,29,1);};
+  ::-webkit-scrollbar-thumb {height:50px; background-color:rgba(232,154,199,1); border-radius:3px;};
+  ::-webkit-scrollbar-corner {background-color:rgba(238,238,238,1);};
 `
 
 export default App;
