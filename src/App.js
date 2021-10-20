@@ -4,6 +4,7 @@ import CharacterList from "./components/CharacterList";
 import SearchBar from "./components/SearchBar.js";
 import styled from 'styled-components';
 import img from "./images/rick.png";
+import img2 from "./images/rick2.png";
 
 
 
@@ -29,8 +30,8 @@ const search = ( event ) => {
 
   return (
     <Container>
-      <Header></Header>
-      <SearchBar onSubmit={search}/>
+     <Header></Header><Mouth></Mouth>
+      <Bar><SearchBar onSubmit={search}/></Bar>
       <Midcontainer>
         <CharacterList link={url}/>
       </Midcontainer>
@@ -44,22 +45,41 @@ const Container = styled.div `
   );
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  height:600;
+  height:100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 62px;
+  
+`
+const Mouth = styled.div`
+  
+  background-image: url(${img2});
+  top:0;
+  height: 500px;
+  width:100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 75%;
+  margin-bottom: 40px;
+  
 `
 const Header = styled.div`
   margin:25px;
   background-image:url(${img});
-  background-repeat:no-repeat;
-  width:625px;
-  height:200px;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 500px;
+  width:100%;
+  position:fixed;
+
+`
+const Bar = styled.div`
+  position: relative;
 `
 const Midcontainer = styled.div `
   width: 90vw;
-  height:539px;
+  height:70vh;
   overflow:scroll;
   overflow-x: hidden;
   ::-webkit-scrollbar {width:3px;height:3px;};
