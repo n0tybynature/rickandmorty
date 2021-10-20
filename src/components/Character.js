@@ -25,8 +25,6 @@ const Characterbox = styled.div`
 background:white;
 border-radius:10px;
 margin-bottom: 15px;
-
-
 `
 const Characterborder = styled.div`
 display: flex;

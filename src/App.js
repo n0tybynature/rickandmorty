@@ -40,28 +40,28 @@ const search = ( event ) => {
 
 const Container = styled.div ` 
   background-image: linear-gradient(
-    rgb(103, 255, 255), white,rgb(245, 234, 86)
+    #69C8ECFF, #97ce4c,#f0e14a
   );
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  height:100vh;
+  height:600;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 62px;
 `
 const Header = styled.div`
   margin:25px;
   background-image:url(${img});
   background-repeat:no-repeat;
   width:625px;
-  height:330px;
+  height:200px;
 `
 const Midcontainer = styled.div `
   width: 90vw;
-  height:800px;
+  height:539px;
   overflow:scroll;
   overflow-x: hidden;
-  padding-bottom:25px;
 `
 
 export default App;

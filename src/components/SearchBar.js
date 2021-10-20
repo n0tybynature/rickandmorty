@@ -8,6 +8,14 @@ const Searchstyle = styled.input `
 `
 const Formstyle = styled.form`
     margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+`
+const Button = styled.button`
+    background-color: #44281d;
+    font-weight: bold;
+    color:white;
 `
 
 
@@ -22,7 +30,7 @@ export default function SearchBar(props){
         <div>
             <Formstyle onSubmit={onSubmit}>
                 <Searchstyle type="text" placeholder="Find A Character!"/>
-                <button type="submit">Search</button>
+                <Button type="submit">Wubba Lubba Dub Dub!</Button>
             </Formstyle>
         </div>
 
